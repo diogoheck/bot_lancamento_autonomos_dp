@@ -17,7 +17,7 @@ def preencher_tela_autonomos(autonomo, primeiro_cadastro):
         sleep(1)
     else:
         pyautogui.doubleClick(213, 191)
-        sleep(1)
+        sleep(3)
         pyautogui.write(autonomo[1])  # autonomo
         sleep(1)
         pyautogui.press('enter')
@@ -49,7 +49,7 @@ def preencher_tela_autonomos(autonomo, primeiro_cadastro):
     pyautogui.press('enter')
     sleep(1)
     pyautogui.press('pagedown')
-    sleep(5)
+    sleep(10)
 
     # Nome
 if __name__ == '__main__':

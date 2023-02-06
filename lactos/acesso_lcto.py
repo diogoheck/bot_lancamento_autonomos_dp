@@ -3,7 +3,7 @@ from time import sleep
 
 
 def acesso_aba_lancamento_autonomos():
-
+    sleep(5)
     # acessar a guia lancamentos
     pyautogui.hotkey('alt', 'l')
     sleep(5)

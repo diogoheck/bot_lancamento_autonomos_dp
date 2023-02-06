@@ -9,8 +9,8 @@ import os
 
 if __name__ == '__main__':
     dados_autonomos = ler_dados_excel()
-    logar_unico()
-    acessar_modulo_folha()
+    # logar_unico()
+    # acessar_modulo_folha()
     primeiro_cadastro = True
 
     acesso_lctos_autonomos()
@@ -22,4 +22,3 @@ if __name__ == '__main__':
 
     pyautogui.alert(text='Fim da Automação',
                     title='Automacao de Lctos de Autônomos', button='ok')
-
