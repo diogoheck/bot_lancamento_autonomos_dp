@@ -5,14 +5,15 @@ from planilha_cliente.ler_dados_admissao_prelim import ler_pasta as ler_dados_ex
 from tela_lctos_autonomos.lcto_de_autonomos import preencher_tela_autonomos
 import pyautogui
 import os
-
+from time import sleep
 
 if __name__ == '__main__':
     dados_autonomos = ler_dados_excel()
     # logar_unico()
     # acessar_modulo_folha()
     primeiro_cadastro = True
-
+    sleep(5)
+    pyautogui.click(335, 785)
     acesso_lctos_autonomos()
     for autonomo in dados_autonomos:
         preencher_tela_autonomos(autonomo, primeiro_cadastro)
